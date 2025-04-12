@@ -26,7 +26,7 @@ function FormComponent() {
         <>
             <Toaster position="top-right" expand={true} />
             <div>
-                <form onSubmit={handleSubmit(onSubmit)} className='w-fit border flex flex-col items-stretch justify-start p-6 rounded mx-auto my-16 gap-y-1 shadow-lg shadow-white/10 h-[22rem]'>
+                <form onSubmit={handleSubmit(onSubmit)} className='w-fit border flex flex-col items-stretch justify-start p-6 rounded mx-auto my-16 gap-y-1 shadow-lg shadow-white/10 min-h-[22rem]'>
                     <h2 className='w-full text-center bg-blue-950 py-5 rounded font-black'>SIGN IN</h2>
                     <label htmlFor="username">Username</label>
                     <input id='username' className='bg-zinc-900 px-4 py-2 rounded w-64 outline-0 text-white font-semibold' {...register("username")} />

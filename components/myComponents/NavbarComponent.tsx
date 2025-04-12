@@ -24,7 +24,7 @@ const components: { title: string; href: string; description: string }[] = [
 //COMPONENT
 export function NavbarComponent() {
     return (
-        <div className="flex sticky top-0 left-0 items-center justify-between py-3 px-6 z-50">
+        <div className="flex sticky top-0 left-0 items-center justify-between py-3 px-6 z-50 bg-black/50 backdrop-blur-lg">
             <SiAdidas className="w-10 h-10" />
             <NavigationMenu className="translate-x-10">
 

@@ -26,16 +26,17 @@ export function NavbarComponent() {
     return (
         <div className="flex sticky top-0 left-0 items-center justify-between py-3 px-6 z-50">
             <SiAdidas className="w-10 h-10" />
-            <NavigationMenu>
+            <NavigationMenu className="translate-x-10">
+
                 <NavigationMenuList>
                     <NavigationMenuItem>
                         <NavigationMenuTrigger>Getting started</NavigationMenuTrigger>
-                        <NavigationMenuContent>
+                        <NavigationMenuContent className="bg-black text-white">
                             <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
                                 <li className="row-span-3">
                                     <NavigationMenuLink asChild>
-                                        <a className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md" href="/"  >
-                                            <SiAdidas />
+                                        <a className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-br from-zinc/900 to-black p-6 no-underline outline-none focus:shadow-md" href="/"  >
+                                            <SiAdidas className="w-24 h-24" />
                                             <div className="mb-2 mt-4 text-lg font-medium">  shadcn/ui </div>
                                             <p className="text-sm leading-tight text-muted-foreground">      Beautifully designed components built with Radix UI and      Tailwind CSS.  </p>
                                         </a>
@@ -53,29 +54,36 @@ export function NavbarComponent() {
                             </ul>
                         </NavigationMenuContent>
                     </NavigationMenuItem>
+
                     <NavigationMenuItem>
                         <NavigationMenuTrigger>Components</NavigationMenuTrigger>
-                        <NavigationMenuContent>
+                        <NavigationMenuContent className="bg-black text-white">
                             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
                                 {components.map((component) => (
-                                    <ListItem
-                                        key={component.title}
-                                        title={component.title}
-                                        href={component.href}
-                                    >
+                                    <ListItem key={component.title} title={component.title} href={component.href}      >
                                         {component.description}
                                     </ListItem>
                                 ))}
                             </ul>
                         </NavigationMenuContent>
                     </NavigationMenuItem>
+
                     <NavigationMenuItem>
                         <Link href="/docs" legacyBehavior passHref>
                             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                                Documentation
+                                <span className="px-6">Articles</span>
                             </NavigationMenuLink>
                         </Link>
                     </NavigationMenuItem>
+
+                    <NavigationMenuItem>
+                        <Link href="/docs" legacyBehavior passHref>
+                            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                                <span className="px-6">Products</span>
+                            </NavigationMenuLink>
+                        </Link>
+                    </NavigationMenuItem>
+
                 </NavigationMenuList>
             </NavigationMenu>
             <div id="ICONS" className="bg-zinc-900 rounded p-2 flex items-center justify-evenly gap-2">

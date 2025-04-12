@@ -3,7 +3,7 @@ import React from 'react'
 
 function HomePage() {
   return (
-    <section className='w-full overflow-x-hidden bg-black'>
+    <section className='w-full bg-black'>
       <NavbarComponent />
     </section>
   )

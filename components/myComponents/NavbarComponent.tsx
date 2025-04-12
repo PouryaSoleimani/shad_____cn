@@ -85,13 +85,15 @@ export function NavbarComponent() {
                     </NavigationMenuItem>
 
                 </NavigationMenuList>
+
             </NavigationMenu>
-            <div id="ICONS" className="bg-zinc-900 rounded p-2 flex items-center justify-evenly gap-2">
-                <BsInboxFill className="bg-zinc-700 hover:bg-black text-white p-1 w-6 h-6 rounded" />
-                <FaUserAlt className="bg-zinc-700 hover:bg-black text-white p-1 w-6 h-6 rounded" />
-                <BsFillCartFill className="bg-zinc-700 hover:bg-black text-white p-1 w-6 h-6 rounded" />
-                <IoIosSettings className="bg-zinc-700 hover:bg-black text-white p-1 w-6 h-6 rounded" />
-                <IoMdLogOut className="bg-zinc-700 hover:bg-black text-white p-1 w-6 h-6 rounded" />
+
+            <div id="ICONS" className="bg-zinc-900 rounded-lg p-2 flex items-center justify-evenly gap-2">
+                <BsInboxFill className="bg-zinc-700 hover:bg-black text-white p-1 w-8 h-8 rounded" />
+                <FaUserAlt className="bg-zinc-700 hover:bg-black text-white p-1 w-8 h-8 rounded" />
+                <BsFillCartFill className="bg-zinc-700 hover:bg-black text-white p-1 w-8 h-8 rounded" />
+                <IoIosSettings className="bg-zinc-700 hover:bg-black text-white p-1 w-8 h-8 rounded" />
+                <IoMdLogOut className="bg-zinc-700 hover:bg-black text-white p-1 w-8 h-8 rounded" />
             </div>
         </div>
     )
